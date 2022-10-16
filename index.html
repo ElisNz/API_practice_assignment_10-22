@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Have one on the house!</title>
+    <meta content="initial-scale=1, width=device-width" name="viewport">
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <header>
+    <link rel="stylesheet" href="menuStyle.css">
+    <div class="menuItems">
+      <nav class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+      </nav>
+      <span>
+        <button class="btn">Stuff</button>
+        <button class="btn">More Stuff</button>
+      </span>
+    </div>
+  </header>
+
+  <body>
+    <div class="flex-container">    
+      <img id="drinkImg" width="25%" alt="An image of the drink">
+        <button type="button" class="drinkButton" onclick="disallocateAndGetNew()">Another one!</button>
+      </img>
+      <ul id="ingredients"></ul>
+      <h1 id="drinkName" style="font-style: italic; font-family: serif; color: rgba(0, 0, 0, 0.701); text-shadow: 0 0 1em rgb(0, 67, 8);">Drink name</h1>
+      <div class="descriptionBox">
+        <h4>Type:</h4>
+        <h3>Attribute1</h3>
+        <h4>Glass: </h4>
+        <h3>Attribute2</h3>
+      </div>
+      <div class="description">
+        Description of the drink
+      </div>
+    </div>
+    <script>getDrink();</script>
+  </body>
+</html>

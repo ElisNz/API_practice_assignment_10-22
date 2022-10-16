@@ -1,0 +1,125 @@
+@font-face {
+  font-family: SourceSansPro;
+  src: url(/WebFonts/SourceSansPro-Regular.ttf) format('truetype');
+}
+
+body {
+    margin: 1%;
+    padding: 1%;
+    font-family: SourceSansPro;
+    background: linear-gradient(90deg, #a0fe6568 7%, rgba(66, 185, 209, 0.753) 51%, rgba(169,233,246,1), #fa016d45 100%);
+}
+
+@media (min-width: 400px) { 
+  .flex-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+}
+@media (max-width: 395px) { 
+  .flex-container {   
+      width: 100%;
+      position: fixed;
+      float: none;
+  }
+  #drinkImg, .drinkButton{
+    display: none;
+  }
+}
+
+#drinkImg {
+    border-radius: 30px;
+    box-shadow: 0 0 3em rgb(0, 0, 0);
+    justify-content: space-between;
+    position: relative;
+    transition: width .3s;
+}
+
+#drinkImg:hover {
+  width: 26%;
+  box-shadow: 0 0 3em rgba(246, 246, 246, 0.345);
+}
+
+#ingredients:hover, .description:hover {
+  box-shadow: 0 0 3em rgb(246, 246, 246);
+  text-shadow: 0px 2px 3px rgba(255, 253, 253, 0.184);
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.262);
+}
+
+.descriptionBox {
+    display: flex;
+    width: 30%;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+#drinkDescription {
+    font-weight: bold;
+    font-style: sans-serif;
+}
+
+.flex-container > .drinkButton {
+    margin-top: 20px;
+    font-size:15px;
+    width:129px;
+    height:36px;
+    border-width:2px;
+    color:rgba(23, 23, 23, 0.79);
+    border-color:rgba(57, 117, 64, 0.64);
+    font-weight:bold;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+    text-shadow: 0px 2px 3px rgba(40, 127, 26, 1);
+    background:rgba(131, 200, 149, 0);
+  }
+  
+.drinkButton:hover {
+  background: rgba(208, 224, 201, 0.359);
+  box-shadow: 0 0 3em rgb(246, 246, 246);
+}
+
+.description {
+  display: flexbox;
+  border-radius: 16px;
+  border: dotted rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 3em rgba(255, 255, 255, 0.858);
+  background-color: rgba(246, 246, 246, 0.178);
+  padding: 1em;
+  font-size: larger;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+#ingredients {  
+  flex-direction: column;
+  font-size: 1.2em;
+  position: absolute;
+  align-self: flex-end;
+  border-radius: 30px;
+  border: dotted rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 3em rgba(255, 255, 255, 0.858);
+  background-color: rgba(246, 246, 246, 0.178);
+  padding: 4%;
+  margin-right: 15%;
+  margin-bottom: 22%;
+  align-content: space-between;
+  overflow: hidden;
+  transition-property: width .3s;
+}
+@media (max-width: 46em) { 
+  #ingredients {  
+      display:none;
+  }
+} @media (max-width: 60em) {
+    #ingredients {
+      width: 50px;
+      margin-bottom: 37%;
+      margin-left: 97%;
+      float: right;
+    }
+}
